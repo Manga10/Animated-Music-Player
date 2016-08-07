@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charest="UTF-8">
+        
+        <title>Animated Music Player</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <header class="header">
+            <h1>Animated Music Player</h1>
+            <h4>Music Composed with figure</h4>
+            
+            <div id="spinner" class="big-spinner">
+                             
+                <div class="spinner-outer">
+                    <img id="outer" src="img/spinner-outer.png" alt="outer">
+                </div>
+                <div class="spinner-center">
+                    <img id="center" src="img/spinner-center.png" alt="center">
+                </div>
+                <div id="icon" class="spinner-sprite">&#9650;</div> 
+            </div>
+            
+            <audio id="song" loop>
+                <source src="songs/jamsauce.mp3" type="audio/mp3">
+                
+                <source src="songs/jamsauce.ogg" type="audio/ogg">
+                
+                Your Browser dose not subbort audio technology
+            </audio>
+        </header>
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>
